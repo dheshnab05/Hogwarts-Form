@@ -1,4 +1,4 @@
-# 🏰 Hogwarts Registration Form
+# Hogwarts Registration Form
 
 A creative Hogwarts-themed web form project developed using **HTML5** and **CSS3**.  
 This project is inspired by the magical world of Hogwarts and focuses on building an attractive and interactive frontend user interface.
@@ -14,13 +14,13 @@ This project is inspired by the magical world of Hogwarts and focuses on buildin
 - Clean webpage structure using HTML5
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 HOGWARTS/
