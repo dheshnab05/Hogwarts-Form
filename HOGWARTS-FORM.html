@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hogwarts Admission Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="HOGWARTS-CSS-FORM.css" />
+
+</head>
+<body>
+  <audio id="bg-music" src="hogwarts-express-inspired-by-harry-potter-305578.mp3" type="audio/mpeg" autoplay loop hidden></audio>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("bg-music");
+    audio.play().catch(() => {
+      const playOnInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", playOnInteraction);
+      };
+      document.addEventListener("click", playOnInteraction);
+    });
+  });
+</script>
+
+
+
+  <div class="hogwarts-form">
+    
+    <h1>Hogwarts Admission Form</h1>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" placeholder="e.g., Hermione Granger" required />
+
+      <label>Preferred House:</label>
+      <select>
+        <option>Gryffindor</option>
+        <option>Ravenclaw</option>
+        <option>Hufflepuff</option>
+        <option>Slytherin</option>
+      </select>
+
+      <label>Wand Description:</label>
+      <input type="text" placeholder="e.g., 10½\", Holly, Phoenix Feather" />
+
+      <label>Magical Pet:</label>
+      <input type="text" placeholder="e.g., Crookshanks" />
+
+      <label>Favorite Spell:</label>
+      <input type="text" placeholder="e.g., Expelliarmus" />
+
+      <button type="submit">Submit by Owl</button>
+    </form>
+  </div>
+</body>
+</html>
